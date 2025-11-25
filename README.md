@@ -48,6 +48,6 @@ npm run build
 npm run deploy
 ```
 
-## 📧 Contact
+## Contact
 
-Feel free to reach out through the contact form on the website or connect with me on social media!
+Feel free to reach out through the contact form on the website or connect with me through my email: elysedelrosario@gmail.com
