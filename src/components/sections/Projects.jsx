@@ -6,79 +6,49 @@ export const Projects = () => {
     className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-white">
         <RevealOnScroll>
             <div className="max-w-5xl mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-[#676c3b] to-[#6a5d3e] bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold mb-12 text-center text-black" style={{fontFamily: 'Blonden, sans-serif'}}>
                     My Projects
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {/* Project Card 1 */}
-                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-all">
-                        <h3 className="text-xl font-bold mb-2">Project One</h3>
-                        <p className="text-gray-400 mb-4">
-                            A brief description of Project One. This project involves...
+                    <div className="p-6 rounded-xl border border-gray-200 hover:-translate-y-1 hover:border-gray-300 hover:shadow-lg transition-all bg-gray-50">
+                        <h3 className="text-xl font-bold mb-2 text-black" style={{fontFamily: 'Blonden, sans-serif'}}>Site-Specific Augmented Reality App</h3>
+                        <p className="text-black mb-4">
+                            Designed a site-specific AR app as a playable art installation for the Le Yeux Du Monde gallery. Explored Unity and 3 SDKs, primarily Vuforia Engine to craft an AR user experience with 5 sculpted 3D models using Cinema4D.
                         </p>
                         <div className="flex flex-wrap gap-2 mt-4">
-                            {["React", "Node.js", "AWS", "Docker"].map((tech, index) => (
+                            {["Unity", "C++", "Cinema4D", "Vuforia Engine", "3D Modeling"].map((tech, index) => (
                                 <span
                                 key={index}
-                                className="bg-blue-500/10 text-blue-500 py-1 px-3
-                                                rounded-full text-sm hover:bg-blue-500/20
-                                                hover:shadow-[0_2px_8px_rgba(59,130,244,0.2)] transition
-                                                "
+                                className="bg-gray-100 text-black py-1 px-3 rounded-full text-sm hover:bg-gray-200 hover:shadow-md transition"
                                     >
                                     {tech}
                                 </span>
                             ))}
                         </div>
                         <div className="flex justify-between items-center">
-                            <a href="https://clothinglibrary-cc94fce6e5b5.herokuapp.com/" className="text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project </a>
+                            <span className="text-gray-500 text-sm my-4">April 2025</span>
                         </div>
                     </div>
 
-                    {/* Project Card 1 */}
-                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-all">
-                        <h3 className="text-xl font-bold mb-2">Project One</h3>
-                        <p className="text-gray-400 mb-4">
-                            A brief description of Project One. This project involves...
+                    {/* Project Card 2 */}
+                    <div className="p-6 rounded-xl border border-gray-200 hover:-translate-y-1 hover:border-gray-300 hover:shadow-lg transition-all bg-gray-50">
+                        <h3 className="text-xl font-bold mb-2 text-black" style={{fontFamily: 'Blonden, sans-serif'}}>Hoos Housing Haven</h3>
+                        <p className="text-black mb-4">
+                            WICS 2025 Hackathon Project. Drafted and designed front end website using Canva and Figma, built UI with React to implement front-end design, and collaborated in a team to connect React frontend to Flask backend.
                         </p>
                         <div className="flex flex-wrap gap-2 mt-4">
-                            {["React", "Node.js", "AWS", "Docker"].map((tech, index) => (
+                            {["React", "JavaScript", "Flask", "Figma", "Canva"].map((tech, index) => (
                                 <span
                                 key={index}
-                                className="bg-blue-500/10 text-blue-500 py-1 px-3
-                                                rounded-full text-sm hover:bg-blue-500/20
-                                                hover:shadow-[0_2px_8px_rgba(59,130,244,0.2)] transition
-                                                "
+                                className="bg-gray-100 text-black py-1 px-3 rounded-full text-sm hover:bg-gray-200 hover:shadow-md transition"
                                     >
                                     {tech}
                                 </span>
                             ))}
                         </div>
                         <div className="flex justify-between items-center">
-                            <a href="https://clothinglibrary-cc94fce6e5b5.herokuapp.com/" className="text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project </a>
-                        </div>
-                    </div>
-
-                    {/* Project Card 1 */}
-                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-all">
-                        <h3 className="text-xl font-bold mb-2">Project One</h3>
-                        <p className="text-gray-400 mb-4">
-                            A brief description of Project One. This project involves...
-                        </p>
-                        <div className="flex flex-wrap gap-2 mt-4">
-                            {["React", "Node.js", "AWS", "Docker"].map((tech, index) => (
-                                <span
-                                key={index}
-                                className="bg-blue-500/10 text-blue-500 py-1 px-3
-                                                rounded-full text-sm hover:bg-blue-500/20
-                                                hover:shadow-[0_2px_8px_rgba(59,130,244,0.2)] transition
-                                                "
-                                    >
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                        <div className="flex justify-between items-center">
-                            <a href="https://clothinglibrary-cc94fce6e5b5.herokuapp.com/" className="text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project </a>
+                            <span className="text-gray-500 text-sm my-4">February 2025</span>
                         </div>
                     </div>
 

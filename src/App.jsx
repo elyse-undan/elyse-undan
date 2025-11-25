@@ -7,17 +7,23 @@ import { Home } from './components/sections/Home'
 import { About } from './components/sections/About'
 import { Projects } from './components/sections/Projects'
 import { Contact } from './components/sections/Contact'
+import { Footer } from './components/Footer'
 import "./index.css"
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false);
 
+  console.log("App rendered, isLoaded:", isLoaded);
+
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+      {!isLoaded && <LoadingScreen onComplete={() => {
+        console.log("LoadingScreen completed");
+        setIsLoaded(true);
+      }} />}
         <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"
-        } bg-gradient-to-b from-[#f4f6dc] from-25% to-white text-[#6a5d3e]`}
+        } bg-gradient-to-b from-[#F9EFBB] from-25% to-white text-black`}
         >
           <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -25,6 +31,7 @@ function App() {
           <About />
           <Projects />
           <Contact />
+          <Footer />
         </div>
     </>
   )
