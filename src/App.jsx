@@ -17,7 +17,7 @@ function App() {
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
         <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"
-        } bg-black text-gray-100`}
+        } bg-gradient-to-b from-[#f4f6dc] from-25% to-white text-[#6a5d3e]`}
         >
           <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
