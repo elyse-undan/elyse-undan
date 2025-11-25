@@ -1,35 +1,57 @@
-<<<<<<< HEAD
-# React + Vite
+# Elyse Undan Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React and Vite showcasing my projects and skills.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit the live website: [https://elyse-undan.github.io/elyse-undan](https://elyse-undan.github.io/elyse-undan)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ Built with React + Vite for fast development and optimized builds
+- 🎨 Styled with Tailwind CSS for modern, responsive design
+- 📱 Mobile-friendly navigation with hamburger menu
+- ✨ Smooth animations and scroll effects
+- 📬 Contact form with EmailJS integration
+- 🚀 Optimized for performance and accessibility
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-## Hi there 👋
+- **Frontend**: React, JavaScript, HTML5, CSS3
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Form Handling**: EmailJS
+- **Deployment**: GitHub Pages
 
-<!--
-**elyse-undan/elyse-undan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 📖 Sections
 
-Here are some ideas to get you started:
+- **Home**: Hero section with introduction
+- **About**: Personal background and skills
+- **Projects**: Showcase of development projects
+- **Contact**: Get in touch form
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
->>>>>>> 6f75db1e268b033e4945ca43f7f53c1c5d9a6b47
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/elyse-undan/elyse-undan.git
+
+# Navigate to project directory
+cd elyse-undan
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## 📧 Contact
+
+Feel free to reach out through the contact form on the website or connect with me on social media!
