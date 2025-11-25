@@ -1,5 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll"
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 
 export const Home = () => {
     const [displayText, setDisplayText] = useState("");
@@ -108,9 +109,9 @@ export const Home = () => {
 
             {/* Buttons underneath */}
             <div className="flex space-x-6 mb-16">
-                <a href="#projects" className="bg-black text-white py-4 px-8 rounded text-lg font-medium transition hover:-translate-y-0.5 hover:bg-gray-800 whitespace-nowrap">
-                    View Projects
-                </a>
+                <Link to="/work" className="bg-black text-white py-4 px-8 rounded text-lg font-medium transition hover:-translate-y-0.5 hover:bg-gray-800 whitespace-nowrap">
+                    View Works
+                </Link>
                 <a href="#contact" className="border-2 border-black text-black py-4 px-8 rounded text-lg font-medium transition hover:-translate-y-0.5 hover:bg-black hover:text-white whitespace-nowrap">
                     Contact Me
                 </a>
