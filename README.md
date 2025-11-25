@@ -1,21 +1,17 @@
-# Elyse Undan Portfolio Website
+# Elyse Undan
 
-A modern, responsive portfolio website built with React and Vite showcasing my projects and skills.
+View My Portfolio: [https://elyse-undan.github.io/elyse-undan](https://elyse-undan.github.io/elyse-undan)
 
-## 🚀 Live Demo
+## Features
 
-Visit the live website: [https://elyse-undan.github.io/elyse-undan](https://elyse-undan.github.io/elyse-undan)
+- Built with React + Vite for fast development and optimized builds
+- Styled with Tailwind CSS for modern, responsive design
+- Mobile-friendly navigation with hamburger menu
+- Smooth animations and scroll effects
+- Contact form with EmailJS integration
+- Optimized for performance and accessibility
 
-## ✨ Features
-
-- ⚡ Built with React + Vite for fast development and optimized builds
-- 🎨 Styled with Tailwind CSS for modern, responsive design
-- 📱 Mobile-friendly navigation with hamburger menu
-- ✨ Smooth animations and scroll effects
-- 📬 Contact form with EmailJS integration
-- 🚀 Optimized for performance and accessibility
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React, JavaScript, HTML5, CSS3
 - **Styling**: Tailwind CSS
@@ -23,14 +19,14 @@ Visit the live website: [https://elyse-undan.github.io/elyse-undan](https://elys
 - **Form Handling**: EmailJS
 - **Deployment**: GitHub Pages
 
-## 📖 Sections
+## Sections
 
 - **Home**: Hero section with introduction
 - **About**: Personal background and skills
 - **Projects**: Showcase of development projects
 - **Contact**: Get in touch form
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -52,6 +48,6 @@ npm run build
 npm run deploy
 ```
 
-## 📧 Contact
+## Contact
 
-Feel free to reach out through the contact form on the website or connect with me on social media!
+Feel free to reach out through the contact form on the website or connect with me through my email: elysedelrosario@gmail.com
