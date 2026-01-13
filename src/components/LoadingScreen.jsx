@@ -24,7 +24,7 @@ export const LoadingScreen = ({ onComplete }) => {
     }, [onComplete]);
     
     return (
-        <div className="fixed inset-0 z-50 bg-[#F9EFBB] text-black flex flex-col items-center justify-center text-4xl font-bold">
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center text-4xl font-bold" style={{backgroundColor: '#F9F1E6', color: 'var(--text-hero)'}}>
             <div>
                 {text}|
             </div>

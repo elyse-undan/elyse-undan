@@ -4,14 +4,15 @@ export const Art = () => {
     return (
         <section
             id="art"
-            className="min-h-screen bg-gradient-to-b from-[#F9EFBB] from-25% to-white px-4 py-20">
+            className="min-h-screen px-4 py-20"
+            style={{backgroundColor: '#F9F1E6'}}>
             <div className="container mx-auto">
                 <RevealOnScroll>
                     <div className="text-center mb-16">
-                        <h1 className="text-4xl md:text-5xl font-bold text-black mb-4" style={{fontFamily: 'Blonden, sans-serif'}}>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{fontFamily: 'Kabel, sans-serif', color: 'var(--text-hero)'}}>
                             Art Gallery
                         </h1>
-                        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                        <p className="text-xl max-w-3xl mx-auto" style={{color: 'var(--text-body)'}}>
                             A collection of my artistic works spanning various mediums and styles.
                         </p>
                     </div>
@@ -21,7 +22,7 @@ export const Art = () => {
                     {/* Digital Media Section */}
                     <div className="mb-12 sm:mb-16">
                         <RevealOnScroll>
-                            <h2 className="text-2xl sm:text-3xl font-bold text-black mb-6 sm:mb-8 text-center" style={{fontFamily: 'Blonden, sans-serif'}}>
+                            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center" style={{fontFamily: 'Kabel, sans-serif', color: 'var(--text-hero)'}}>
                                 Digital Media
                             </h2>
                         </RevealOnScroll>
@@ -92,7 +93,7 @@ export const Art = () => {
                     {/* Physical Media Section */}
                     <div className="mb-16">
                         <RevealOnScroll>
-                            <h2 className="text-3xl font-bold text-black mb-8 text-center" style={{fontFamily: 'Blonden, sans-serif'}}>
+                            <h2 className="text-3xl font-bold mb-8 text-center" style={{fontFamily: 'Kabel, sans-serif', color: 'var(--text-hero)'}}>
                                 Physical Media
                             </h2>
                         </RevealOnScroll>

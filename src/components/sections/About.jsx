@@ -87,7 +87,7 @@ export const About = () => {
         );
     };
 
-    return <section id="about" className="min-h-screen bg-white">
+    return <section id="about" className="min-h-screen" style={{background: 'rgba(255, 247, 242, 0.95)'}}>
         <RevealOnScroll>
             {/* First Container: Image + About Me Title + Paragraph */}
             <div className="min-h-screen flex items-center pt-20">
@@ -109,24 +109,24 @@ export const About = () => {
                     {/* About Content */}
                     <div className="w-full lg:w-2/3 h-full flex items-center justify-center p-6 lg:p-8">
                         <div className="w-full max-w-3xl">
-                            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-black text-center lg:text-left" style={{fontFamily: 'Blonden, sans-serif'}}> 
+                            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[#2B1B1B] text-center lg:text-left" style={{fontFamily: 'Kabel, sans-serif'}}> 
                                 ABOUT ME
                             </h2>
                             <div className="space-y-4 lg:space-y-6">
                                 <RevealOnScroll>
-                                    <p className="text-black font-medium text-lg leading-relaxed">
+                                    <p style={{color: 'var(--text-body)', fontFamily: 'Kabel, sans-serif'}} className="font-medium text-lg leading-relaxed">
                                         Hello! I'm Elyse Undan, a software developer and designer who loves creating digital experiences that feel intuitive, thoughtful, and authentic. I'm currently studying Computer Science at the University of Virginia, where I've been able to combine my technical background with my love for digital design, art, and the humanities.
                                     </p>
                                 </RevealOnScroll>
                                 
                                 <RevealOnScroll>
-                                    <p className="text-black font-medium text-lg leading-relaxed">
+                                    <p style={{color: 'var(--text-body)', fontFamily: 'Kabel, sans-serif'}} className="font-medium text-lg leading-relaxed">
                                         I'm especially drawn to projects that sit at the intersection of creativity and problem-solving. Whether I'm designing interfaces, exploring interaction patterns, or building out full-stack features, I'm always thinking about how people experience technology and how design choices shape the way we connect with it. I love digging into research, simplifying complex systems, and turning ideas into clean, intentional experiences.
                                     </p>
                                 </RevealOnScroll>
                                 
                                 <RevealOnScroll>
-                                    <p className="text-black font-medium text-lg leading-relaxed">
+                                    <p style={{color: 'var(--text-body)', fontFamily: 'Kabel, sans-serif'}} className="font-medium text-lg leading-relaxed">
                                         Outside of work, you'll usually find me experimenting with new visual styles, sketching, or diving into topics that explore human behavior and storytelling. I'm passionate about design that respects people, embraces curiosity, and makes everyday moments a little more meaningful.
                                         If you're working on something exciting, or just want to talk design, art, or tech, feel free to reach out!
                                     </p>
@@ -138,12 +138,12 @@ export const About = () => {
             </div>
 
             {/* Second Container: Education + Work Experience + Skills */}
-            <div className="min-h-screen bg-gradient-to-b from-white to-[#F9EFBB]/20 py-20">
+            <div className="min-h-screen py-20" style={{background: 'rgba(255, 247, 242, 0.9)'}}>
                 <div className="max-w-6xl mx-auto px-4">
                     
                     {/* Education and Work Experience Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                        <div className="p-6 rounded-xl border-gray-200 border hover:-translate-y-1 transition-all bg-gray-50">
+                        <div className="p-6 rounded-xl border-gray-200 border hover:-translate-y-1 transition-all bg-white">
                             <h3 className="text-xl font-bold mb-4 text-black" style={{fontFamily: 'Blonden, sans-serif'}}> Education </h3>
                             <div className="text-black space-y-3">
                                 <div>
@@ -156,7 +156,7 @@ export const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="p-6 rounded-xl border-gray-200 border hover:-translate-y-1 transition-all bg-gray-50">
+                        <div className="p-6 rounded-xl border-gray-200 border hover:-translate-y-1 transition-all bg-white">
                             <h3 className="text-xl font-bold mb-4 text-black" style={{fontFamily: 'Blonden, sans-serif'}}> Work Experience </h3>
                             <div className="text-black space-y-4">
                                 <div> 
@@ -184,7 +184,7 @@ export const About = () => {
                     </div>
 
                     {/* Skills Scrolling Wheels Card */}
-                    <div className="bg-[#F9EFBB]/20 rounded-xl p-8 border-gray-200 border hover:-translate-y-1 transition-all">
+                    <div className="bg-gray-50 rounded-xl p-8 border-gray-200 border hover:-translate-y-1 transition-all">
                         <h2 className="text-3xl font-bold mb-8 text-center text-black" style={{fontFamily: 'Blonden, sans-serif'}}> Skills </h2>
                         
                         {/* Skills Scrolling Wheels */}

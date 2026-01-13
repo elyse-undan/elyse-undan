@@ -60,7 +60,7 @@ export const Footer = () => {
                                     }
                                 }
                             }}
-                            className="bg-[#F9EFBB] hover:bg-yellow-300 text-black px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105"
+                            className="bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105"
                         >
                             Get in touch
                         </button>

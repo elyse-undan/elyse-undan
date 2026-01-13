@@ -24,10 +24,11 @@ export const Contact = () => {
     return (
         <section
             id="contact"
-            className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-white relative z-10">
+            className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative z-10"
+            style={{backgroundColor: '#F9F1E6'}}>
             <RevealOnScroll>
                 <div className="w-full max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-8 text-black text-center" style={{fontFamily: 'Blonden, sans-serif'}}> 
+                        <h2 className="text-3xl font-bold mb-8 text-center" style={{fontFamily: 'Kabel, sans-serif', color: 'var(--text-hero)'}}> 
                         Get in Touch</h2>
                 </div>
             </RevealOnScroll>
@@ -42,7 +43,8 @@ export const Contact = () => {
                             name="name" 
                             required 
                             value={formData.name}
-                            className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 text-black transition focus:outline-none focus:border-black focus:bg-white placeholder-gray-700" 
+                            className="w-full border border-gray-300 rounded-lg px-4 py-3 transition focus:outline-none focus:border-black focus:bg-gray-50 placeholder-gray-500 text-black"
+                            style={{fontFamily: 'Kabel, sans-serif', backgroundColor: 'white'}} 
                             placeholder="Name.." 
                             onChange={(e) => setFormData({...formData, name: e.target.value})}
                         />
@@ -55,7 +57,8 @@ export const Contact = () => {
                             name="email" 
                             required 
                             value={formData.email}
-                            className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 text-black transition focus:outline-none focus:border-black focus:bg-white placeholder-gray-700" 
+                            className="w-full border border-gray-400 rounded-lg px-4 py-3 transition focus:outline-none focus:border-black focus:bg-white placeholder-gray-600 text-black"
+                            style={{fontFamily: 'Kabel, sans-serif', backgroundColor: '#F9F1E6'}} 
                             placeholder="Email.." 
                             onChange={(e) => setFormData({...formData, email: e.target.value})}
                         />
@@ -68,7 +71,8 @@ export const Contact = () => {
                             rows="5"
                             required
                             value={formData.message}
-                            className="w-full bg-gray-50 border border-gray-200 rounded px-4 py-3 text-black transition focus:outline-none focus:border-black focus:bg-white placeholder-gray-700"
+                            className="w-full border border-gray-400 rounded-lg px-4 py-3 transition focus:outline-none focus:border-black focus:bg-white placeholder-gray-600 text-black resize-none"
+                            style={{fontFamily: 'Kabel, sans-serif', backgroundColor: '#F9F1E6'}}
                             placeholder="Your Message..."
                             onChange={(e) => setFormData({...formData, message: e.target.value})}
                         ></textarea>
@@ -80,7 +84,11 @@ export const Contact = () => {
                     <button
                         type="submit"
                         form="contact-form"
-                        className="w-full bg-black text-white py-3 px-6 rounded font-medium transition-colors duration-200 hover:bg-gray-800 relative z-20"
+                        className="w-full font-medium py-3 px-6 rounded-lg transition-all duration-200 bg-black hover:bg-gray-800 relative z-20"
+                        style={{
+                            fontFamily: 'Kabel, sans-serif',
+                            color: '#F9F1E6'
+                        }}
                     >
                         Send Message
                     </button>
