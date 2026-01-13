@@ -1,165 +1,95 @@
 import { RevealOnScroll } from '../RevealOnScroll';
 
 export const Art = () => {
+    const artworks = [
+        {
+            id: 1,
+            title: "Digital Painting & Composition",
+            image: "/elyse-undan/images/cover_artwork.png",
+            medium: "Procreate",
+            description: "my digital paintings"
+        },
+        {
+            id: 2,
+            title: "Film & Animation",
+            image: "/elyse-undan/images/animation.png",
+            medium: "Adobe PremierePro, Cinema4D, Procreate",
+            description: "short films & animated works"
+        },
+        {
+            id: 3,
+            title: "Graphics & Illustration",
+            image: "/elyse-undan/images/graphics.png",
+            medium: "Procreate, Adobe Photoshop & Illustrator",
+            description: "graphics, flyers, stickers, and more"
+        },
+        {
+            id: 4,
+            title: "Photography",
+            image: "/elyse-undan/images/photography.jpg",
+            medium: "Digital Photography",
+            description: "digital photography"
+        },
+        {
+            id: 5,
+            title: "Paint & Graphite",
+            image: "https://via.placeholder.com/400x400/FFB74D/ffffff?text=Paint+%26+Graphite",
+            medium: "Watercolor, Acrylic, Graphite, Charcoal",
+            description: "an assortment of traditional mediums"
+        },
+        {
+            id: 6,
+            title: "Ceramic Sculptures",
+            image: "/elyse-undan/images/ceramics.jpg",
+            medium: "Earthenware Clay, Glaze, Wood",
+            description: "sculptural works"
+        }
+    ];
+
     return (
         <section
             id="art"
             className="min-h-screen px-4 py-20"
             style={{backgroundColor: '#F9F1E6'}}>
-            <div className="container mx-auto">
+            <div className="container mx-auto max-w-7xl">
                 <RevealOnScroll>
                     <div className="text-center mb-16">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{fontFamily: 'Kabel, sans-serif', color: 'var(--text-hero)'}}>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{fontFamily: 'Outfit, sans-serif', color: '#000000'}}>
                             Art Gallery
                         </h1>
-                        <p className="text-xl max-w-3xl mx-auto" style={{color: 'var(--text-body)'}}>
+                        <p className="text-xl max-w-3xl mx-auto" style={{fontFamily: 'Jeju Myeongjo, serif', color: '#000000'}}>
                             A collection of my artistic works spanning various mediums and styles.
                         </p>
                     </div>
                 </RevealOnScroll>
 
-                <div className="max-w-7xl mx-auto">
-                    {/* Digital Media Section */}
-                    <div className="mb-12 sm:mb-16">
-                        <RevealOnScroll>
-                            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center" style={{fontFamily: 'Kabel, sans-serif', color: 'var(--text-hero)'}}>
-                                Digital Media
-                            </h2>
-                        </RevealOnScroll>
-                        
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                                <img 
-                                    src="/elyse-undan/images/cover_artwork.png" 
-                                    alt="Digital Painting & Composition"
-                                    className="w-full h-64 object-cover"
-                                />
-                                <div className="p-4 sm:p-6">
-                                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2" style={{fontFamily: 'Blonden, sans-serif'}}>
-                                        Digital Painting & Composition
-                                    </h3>
-                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-1 sm:gap-0">
-                                        <span className="text-gray-600 text-xs sm:text-sm font-medium">Procreate</span>
-                                        <span className="text-gray-500 text-xs sm:text-sm">2020-25</span>
-                                    </div>
-                                    <p className="text-gray-700 text-sm leading-relaxed">
-                                        my digital paintings
-                                    </p>
-                                </div>
-                            </div>
+                {/* Square Gallery Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {artworks.map((artwork) => (
+                        <div 
+                            key={artwork.id}
+                            className="group relative aspect-square overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
+                        >
+                            {/* Image */}
+                            <img 
+                                src={artwork.image}
+                                alt={artwork.title}
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
                             
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                                <img 
-                                    src="/elyse-undan/images/animation.png" 
-                                    alt="Film & Animation"
-                                    className="w-full h-64 object-cover"
-                                />
-                                <div className="p-4 sm:p-6">
-                                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2" style={{fontFamily: 'Blonden, sans-serif'}}>
-                                        Film & Animation
+                            {/* Dark Overlay with Text (appears on hover) */}
+                            <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div className="text-center text-white p-4">
+                                    <h3 className="text-xl md:text-2xl font-bold mb-2" style={{fontFamily: 'Outfit, sans-serif'}}>
+                                        {artwork.title}
                                     </h3>
-                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-1 sm:gap-0">
-                                        <span className="text-gray-600 text-xs sm:text-sm font-medium">Adobe PremierePro, Cinema4D, Procreate</span>
-                                        <span className="text-gray-500 text-xs sm:text-sm">2024-25</span>
-                                    </div>
-                                    <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
-                                        short films & animated works
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                                <img 
-                                    src="/elyse-undan/images/graphics.png" 
-                                    alt="Graphics & Illustration"
-                                    className="w-full h-64 object-cover"
-                                />
-                                <div className="p-4 sm:p-6">
-                                    <h3 className="text-lg sm:text-xl font-bold text-black mb-2" style={{fontFamily: 'Blonden, sans-serif'}}>
-                                        Graphics & Illustration
-                                    </h3>
-                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 gap-1 sm:gap-0">
-                                        <span className="text-gray-600 text-xs sm:text-sm font-medium">Procreate, Adobe Photoshop & Illustrator</span>
-                                        <span className="text-gray-500 text-xs sm:text-sm">2024-25</span>
-                                    </div>
-                                    <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
-                                        graphics, flyers, stickers, and more
+                                    <p className="text-sm md:text-base opacity-90" style={{fontFamily: 'Jeju Myeongjo, serif'}}>
+                                        {artwork.medium}
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Physical Media Section */}
-                    <div className="mb-16">
-                        <RevealOnScroll>
-                            <h2 className="text-3xl font-bold mb-8 text-center" style={{fontFamily: 'Kabel, sans-serif', color: 'var(--text-hero)'}}>
-                                Physical Media
-                            </h2>
-                        </RevealOnScroll>
-                        
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                                <img 
-                                    src="/api/placeholder/400/300" 
-                                    alt="Paint & Graphite"
-                                    className="w-full h-64 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-bold text-black mb-2" style={{fontFamily: 'Blonden, sans-serif'}}>
-                                        Paint & Graphite
-                                    </h3>
-                                    <div className="flex justify-between items-center mb-3">
-                                        <span className="text-gray-600 text-sm font-medium">Watercolor, Acrylic, Graphite, Charcoal</span>
-                                        <span className="text-gray-500 text-sm">2020-25</span>
-                                    </div>
-                                    <p className="text-gray-700 text-sm leading-relaxed">
-                                        an assortment of traditional mediums
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                                <img 
-                                    src="/elyse-undan/images/ceramics.jpg" 
-                                    alt="Ceramic Sculptures"
-                                    className="w-full h-64 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-bold text-black mb-2" style={{fontFamily: 'Blonden, sans-serif'}}>
-                                        Ceramic Sculptures
-                                    </h3>
-                                    <div className="flex justify-between items-center mb-3">
-                                        <span className="text-gray-600 text-sm font-medium">Earthenware Clay, Glaze, Wood</span>
-                                        <span className="text-gray-500 text-sm">2025</span>
-                                    </div>
-                                    <p className="text-gray-700 text-sm leading-relaxed">
-                                        sculptural works
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            {/* <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                                <img 
-                                    src="/api/placeholder/400/300" 
-                                    alt="Printmaking"
-                                    className="w-full h-64 object-cover"
-                                />
-                                <div className="p-6">
-                                    <h3 className="text-xl font-bold text-black mb-2" style={{fontFamily: 'Blonden, sans-serif'}}>
-                                        Printmaking
-                                    </h3>
-                                    <div className="flex justify-between items-center mb-3">
-                                        <span className="text-gray-600 text-sm font-medium">Inglio/Monotype Ink</span>
-                                        <span className="text-gray-500 text-sm">2026</span>
-                                    </div>
-                                    <p className="text-gray-700 text-sm leading-relaxed">
-                                        printmaking pieces
-                                    </p>
-                                </div>
-                            </div> */}
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>
