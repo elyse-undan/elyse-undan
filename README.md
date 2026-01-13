@@ -1,6 +1,6 @@
 # Elyse Undan
 
-View My Portfolio: [[https://elyse-undan.github.io/elyse-undan](https://elyse-undan.github.io/elyse-undan)]
+View My Portfolio: [https://elyse-undan.github.io/elyse-undan/]
 
 ## Features
 
