@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 export const Projects = () => {
     return <section 
     id="work" 
@@ -22,9 +25,9 @@ export const Projects = () => {
                             <p className="text-lg mb-6 leading-relaxed text-gray-700">
                                 CoRA is a tool that provides AI summaries on each course and associated professor in the UVA SIS enrollment site. Difficulty ratings and referenced links are provided as well for transparency.
                             </p>
-                            <button className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors" style={{fontFamily: 'Outfit, sans-serif'}}>
-                                Visit Site
-                            </button>
+                            <Link to="/work/cora" className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors inline-block" style={{fontFamily: 'Outfit, sans-serif'}}>
+                                Learn More
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -53,9 +56,9 @@ export const Projects = () => {
                             <p className="text-lg mb-6 leading-relaxed text-gray-700">
                                 An intelligent inventory management system designed to track product expiration dates and optimize stock rotation. Features include automated alerts, barcode scanning, and analytics dashboard.
                             </p>
-                            <button className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors" style={{fontFamily: 'Outfit, sans-serif'}}>
-                                Visit Site
-                            </button>
+                            <Link to="/work/shelflife" className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors inline-block" style={{fontFamily: 'Outfit, sans-serif'}}>
+                                Learn More
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -84,9 +87,9 @@ export const Projects = () => {
                             <p className="text-lg mb-6 leading-relaxed text-gray-700">
                                 A comprehensive clothing management system designed to help users organize, track, and optimize their wardrobe. Features include outfit planning and sustainable fashion tracking.
                             </p>
-                            <button className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors" style={{fontFamily: 'Outfit, sans-serif'}}>
-                                Visit Site
-                            </button>
+                            <Link to="/work/clothing-library" className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors inline-block" style={{fontFamily: 'Outfit, sans-serif'}}>
+                                Learn More
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -115,9 +118,9 @@ export const Projects = () => {
                             <p className="text-lg mb-6 leading-relaxed text-gray-700">
                                 Designed a site-specific AR app as a playable art installation for the Le Yeux Du Monde gallery. Explored Unity and 3 SDKs to craft an AR user experience with 5 sculpted 3D models.
                             </p>
-                            <button className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors" style={{fontFamily: 'Outfit, sans-serif'}}>
-                                Visit Site
-                            </button>
+                            <Link to="/work/ar-gallery" className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors inline-block" style={{fontFamily: 'Outfit, sans-serif'}}>
+                                Learn More
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -146,9 +149,9 @@ export const Projects = () => {
                             <p className="text-lg mb-6 leading-relaxed text-gray-700">
                                 WICS 2025 Hackathon project. Drafted and designed front end website using Canva and Figma, built UI with React and collaborated in a team to connect React frontend to Flask backend.
                             </p>
-                            <button className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors" style={{fontFamily: 'Outfit, sans-serif'}}>
-                                Visit Site
-                            </button>
+                            <Link to="/work/hoos-housing" className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors inline-block" style={{fontFamily: 'Outfit, sans-serif'}}>
+                                Learn More
+                            </Link>
                         </div>
                     </div>
                 </div>

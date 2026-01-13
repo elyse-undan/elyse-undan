@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { RevealOnScroll } from '../RevealOnScroll';
 
 export const Art = () => {
@@ -7,42 +9,48 @@ export const Art = () => {
             title: "Digital Painting & Composition",
             image: "/elyse-undan/images/cover_artwork.png",
             medium: "Procreate",
-            description: "my digital paintings"
+            description: "my digital paintings",
+            link: "/art/digital-painting"
         },
         {
             id: 2,
             title: "Film & Animation",
             image: "/elyse-undan/images/animation.png",
             medium: "Adobe PremierePro, Cinema4D, Procreate",
-            description: "short films & animated works"
+            description: "short films & animated works",
+            link: "/art/film-animation"
         },
         {
             id: 3,
             title: "Graphics & Illustration",
             image: "/elyse-undan/images/graphics.png",
             medium: "Procreate, Adobe Photoshop & Illustrator",
-            description: "graphics, flyers, stickers, and more"
+            description: "graphics, flyers, stickers, and more",
+            link: "/art/graphics"
         },
         {
             id: 4,
             title: "Photography",
             image: "/elyse-undan/images/photography.jpg",
             medium: "Digital Photography",
-            description: "digital photography"
+            description: "digital photography",
+            link: "/art/photography"
         },
         {
             id: 5,
             title: "Paint & Graphite",
             image: "https://via.placeholder.com/400x400/FFB74D/ffffff?text=Paint+%26+Graphite",
             medium: "Watercolor, Acrylic, Graphite, Charcoal",
-            description: "an assortment of traditional mediums"
+            description: "an assortment of traditional mediums",
+            link: "/art/paint-graphite"
         },
         {
             id: 6,
             title: "Ceramic Sculptures",
             image: "/elyse-undan/images/ceramics.jpg",
             medium: "Earthenware Clay, Glaze, Wood",
-            description: "sculptural works"
+            description: "sculptural works",
+            link: "/art/ceramics"
         }
     ];
 
@@ -66,9 +74,10 @@ export const Art = () => {
                 {/* Square Gallery Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {artworks.map((artwork) => (
-                        <div 
+                        <Link 
                             key={artwork.id}
-                            className="group relative aspect-square overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
+                            to={artwork.link}
+                            className="group relative aspect-square overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105 block"
                         >
                             {/* Image */}
                             <img 
@@ -88,7 +97,7 @@ export const Art = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
