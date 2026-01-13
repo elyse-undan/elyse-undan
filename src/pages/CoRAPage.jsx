@@ -177,36 +177,6 @@ export const CoRAPage = () => {
                         </div>
                     </div>
                 </section>
-
-                    {/* Additional Sections for Scroll Testing */}
-                    <div className="space-y-16">
-                        <section id="technical" className="py-8">
-                            <h3 className="text-2xl font-bold mb-6 text-black" style={{ fontFamily: 'Outfit' }}>
-                                Technical Implementation
-                            </h3>
-                            <p className="text-gray-800 leading-relaxed mb-4" style={{ fontFamily: 'Jeju Myeongjo' }}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                            </p>
-                        </section>
-
-                        <section id="testing" className="py-8">
-                            <h3 className="text-2xl font-bold mb-6 text-black" style={{ fontFamily: 'Outfit' }}>
-                                User Testing
-                            </h3>
-                            <p className="text-gray-800 leading-relaxed mb-4" style={{ fontFamily: 'Jeju Myeongjo' }}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                            </p>
-                        </section>
-
-                        <section id="results" className="py-8">
-                            <h3 className="text-2xl font-bold mb-6 text-black" style={{ fontFamily: 'Outfit' }}>
-                                Final Results
-                            </h3>
-                            <p className="text-gray-800 leading-relaxed mb-4" style={{ fontFamily: 'Jeju Myeongjo' }}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                            </p>
-                        </section>
-                    </div>
                 </div>
             </div>
         </>
