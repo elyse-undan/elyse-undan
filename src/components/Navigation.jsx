@@ -37,21 +37,6 @@ export const Navigation = () => {
                             >
                                 Home
                             </Link>
-                            <Link 
-                                to="/about" 
-                                className={`transition-colors font-medium ${
-                                    isActive('/about') ? 'border-b-2' : ''
-                                }`}
-                                style={{
-                                    fontFamily: 'Outfit, sans-serif',
-                                    color: 'var(--text-nav)',
-                                    borderColor: isActive('/about') ? 'var(--text-nav)' : 'transparent'
-                                }}
-                                onMouseEnter={(e) => e.target.style.color = 'var(--text-nav-hover)'}
-                                onMouseLeave={(e) => e.target.style.color = 'var(--text-nav)'}
-                            >
-                                About
-                            </Link>
                             <button 
                                 className="transition-colors font-medium"
                                 style={{
@@ -78,6 +63,21 @@ export const Navigation = () => {
                             >
                                 Work
                             </button>
+                            <Link 
+                                to="/about" 
+                                className={`transition-colors font-medium ${
+                                    isActive('/about') ? 'border-b-2' : ''
+                                }`}
+                                style={{
+                                    fontFamily: 'Outfit, sans-serif',
+                                    color: 'var(--text-nav)',
+                                    borderColor: isActive('/about') ? 'var(--text-nav)' : 'transparent'
+                                }}
+                                onMouseEnter={(e) => e.target.style.color = 'var(--text-nav-hover)'}
+                                onMouseLeave={(e) => e.target.style.color = 'var(--text-nav)'}
+                            >
+                                About
+                            </Link>
                             <Link 
                                 to="/art" 
                                 className={`transition-colors font-medium ${

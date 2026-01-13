@@ -29,16 +29,6 @@ export const MobileMenu = ({menuOpen, setMenuOpen, isRouter = false}) => {
                             Home
                     </Link>
 
-                    <Link to="/about" 
-                        onClick={() => setMenuOpen(false)}
-                        className={`text-2xl font-semibold my-4 transform transition-transform duration-300
-                        ${menuOpen
-                            ? "translate-y-0 opacity-100"
-                            : "-translate-y-4 opacity-0"}`}
-                        style={{color: 'var(--text-nav)', fontFamily: 'Kabel, sans-serif'}}>  
-                            About
-                    </Link>
-
                     <Link to="/work" 
                         onClick={() => setMenuOpen(false)}
                         className={`text-2xl font-semibold my-4 transform transition-transform duration-300
@@ -47,6 +37,16 @@ export const MobileMenu = ({menuOpen, setMenuOpen, isRouter = false}) => {
                             : "-translate-y-4 opacity-0"}`}
                         style={{color: 'var(--text-nav)', fontFamily: 'Kabel, sans-serif'}}>  
                             Work
+                    </Link>
+
+                    <Link to="/about" 
+                        onClick={() => setMenuOpen(false)}
+                        className={`text-2xl font-semibold my-4 transform transition-transform duration-300
+                        ${menuOpen
+                            ? "translate-y-0 opacity-100"
+                            : "-translate-y-4 opacity-0"}`}
+                        style={{color: 'var(--text-nav)', fontFamily: 'Kabel, sans-serif'}}>  
+                            About
                     </Link>
 
                     <Link to="/art" 
