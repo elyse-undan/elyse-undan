@@ -13,7 +13,7 @@ export const MobileMenu = ({menuOpen, setMenuOpen, isRouter = false}) => {
                         }`}
                         style={{backgroundColor: '#F9F1E6'}}
         >
-            <button onClick={() => setMenuOpen(false)} className="absolute top-6 right-6 text-3xl focus:outline-none cursor-pointer" style={{color: 'var(--text-nav)'}} aria-label="Close Menu">
+            <button onClick={() => setMenuOpen(false)} className="absolute top-6 right-6 text-3xl focus:outline-none touch-manipulation" style={{color: 'var(--text-nav)'}} aria-label="Close Menu">
                 &times;
             </button>
             

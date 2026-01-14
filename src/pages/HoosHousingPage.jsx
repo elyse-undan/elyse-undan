@@ -31,12 +31,12 @@ export const HoosHousingPage = () => {
 
     return (
         <>
-            {/* Floating Sidebar */}
-            <div className={`fixed top-1/2 right-0 transform -translate-y-1/2 z-[60] transition-all duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-64'}`}>
+            {/* Floating Sidebar - Hidden on mobile */}
+            <div className={`hidden md:block fixed top-1/2 right-0 transform -translate-y-1/2 z-[60] transition-all duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-64'}`}>
                 {/* Toggle Button */}
                 <button
                     onClick={toggleSidebar}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-full bg-black/70 hover:bg-black/90 text-white p-3 rounded-l-lg transition-all duration-300"
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-full bg-black/70 hover:bg-black/90 active:bg-black text-white p-4 rounded-l-lg transition-all duration-300 touch-manipulation"
                 >
                     <svg 
                         className={`w-5 h-5 transition-transform duration-300 ${sidebarOpen ? 'rotate-0' : 'rotate-180'}`} 
@@ -54,7 +54,7 @@ export const HoosHousingPage = () => {
                         Project Sections
                     </h4>
                     <div className="space-y-4">
-                        <button onClick={() => scrollToSection('overview')} className="block text-gray-700 hover:text-black transition-colors text-left" style={{ fontFamily: 'Jeju Myeongjo' }}>
+                        <button onClick={() => scrollToSection('overview')} className="block w-full text-left text-gray-700 hover:text-black active:text-black transition-colors py-2 touch-manipulation" style={{ fontFamily: 'Jeju Myeongjo' }}>
                             Overview
                         </button>
                     </div>
@@ -67,7 +67,7 @@ export const HoosHousingPage = () => {
             <div className="bg-orange-300 px-4 py-16 lg:py-24" style={{backgroundColor: '#FFB74D'}}>
                 <div className="container mx-auto max-w-6xl">
                     {/* Back Arrow */}
-                    <Link to="/work" className="inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-black mb-8 hover:bg-black hover:text-white transition-colors group">
+                    <Link to="/work" className="inline-flex items-center justify-center w-12 h-12 md:w-12 md:h-12 sm:w-14 sm:h-14 rounded-full border-2 border-black mb-8 hover:bg-black hover:text-white active:bg-black active:text-white transition-colors group touch-manipulation">
                         <svg 
                             className="w-6 h-6 text-black group-hover:text-white" 
                             fill="none" 

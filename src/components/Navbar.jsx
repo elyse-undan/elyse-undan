@@ -27,21 +27,21 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                 <a href="#home" className="font-mono text-xl font-bold ml-2 text-black">
                     elyse.undan
                 </a>                {/* Hamburger Menu Icon for Mobile */}
-                <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden mr-2 flex items-center justify-center text-black text-2xl" onClick={()=> setMenuOpen((prev) => !prev)}>
+                <div className="w-7 h-5 relative z-40 md:hidden mr-2 flex items-center justify-center text-black text-2xl touch-manipulation" onClick={()=> setMenuOpen((prev) => !prev)}>
                     &#9776;
                 </div>
 
                 <div className="hidden md:flex items-center space-x-8 mr-2">
-                    <a href="#home" className="text-black hover:text-gray-600 transition-colors font-medium">
+                    <a href="#home" className="text-black hover:text-gray-600 active:text-gray-600 transition-colors font-medium touch-manipulation">
                         Home
                     </a>
-                    <a href="#about" className="text-black hover:text-gray-600 transition-colors font-medium">
+                    <a href="#about" className="text-black hover:text-gray-600 active:text-gray-600 transition-colors font-medium touch-manipulation">
                         About
                     </a>
-                    <a href="#projects" className="text-black hover:text-gray-600 transition-colors font-medium">
+                    <a href="#projects" className="text-black hover:text-gray-600 active:text-gray-600 transition-colors font-medium touch-manipulation">
                         Projects
                     </a>
-                    <a href="#contact" className="text-black hover:text-gray-600 transition-colors font-medium">
+                    <a href="#contact" className="text-black hover:text-gray-600 active:text-gray-600 transition-colors font-medium touch-manipulation">
                         Contact
                     </a>
                 </div>            </div>
